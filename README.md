@@ -74,3 +74,5 @@ The website is fully responsive and optimized for:
 
 Feel free to fork this repository and submit pull requests for any improvements.
 
+---
+Created with ❤️ by Ujwal Nagrikar
