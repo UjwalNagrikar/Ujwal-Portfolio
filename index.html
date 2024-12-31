@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">Portfolio</div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <a href="resume/ujwal-Fresher-Resume.docx" download class="download-cv">Download CV</a>
+        </nav>
+
+        <main class="hero-section">
+            <div class="profile-image">
+                <img src="images/Screenshot 2024-12-31 170400.png" alt="Profile Photo">
+            </div>
+            <div class="hero-content">
+                <h2>Hello, I'm</h2>
+                <h1>Ujwal Nagrikar</h1> <h2>
+                <p>And I'm a <span id="dynamic-role"></span></p></h2>   
+            </div>
+        </main>
+
+        <section class="about-section" id="about">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>Hello, I'm Ujwal Nagrikar</p>
+                <p>I am passionate about learning and continually enhancing my technical expertise to solve real-world challenges effectively. I take pride in my adaptability, problem-solving abilities, and a keen interest in emerging technologies. My goal is to leverage my skills to deliver impactful solutions and grow in the field of cloud computing.</p>
+                <p>Let's connect and explore opportunities to create something remarkable together!</p>
+            </div>
+        </section>
+
+        <!-- Add Skills Section after hero-section -->
+        <section class="skills-section" id="skills">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-container">
+                <div class="skill-box">
+                    <h3>Amazon Web Services(AWS)</h3>
+                    <div class="skill-progress"></div>
+                </div>
+                <div class="skill-box">
+                    <h3>Terraform</h3>
+                    <div class="skill-progress"></div>
+                </div>
+                <div class="skill-box">
+                    <h3>Linux</h3>
+                    <div class="skill-progress"></div>
+                </div>
+                <div class="skill-box">
+                    <h3>Docker</h3>
+                    <div class="skill-progress"></div>
+                </div>
+                <div class="skill-box">
+                    <h3>Kubernetes</h3>
+                    <div class="skill-progress"></div>
+                </div>
+                <div class="skill-box">
+                    <h3>Git</h3>
+                    <div class="skill-progress"></div>
+                </div>
+                <div class="skill-box">
+                    <h3>GitHub</h3>
+                    <div class="skill-progress"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects-section" id="projects">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-container">
+                <div class="project-card">
+                    <h3>Hosting a Static Website on AWS S3 Using Terraform</h3>
+                    <p>
+                        - Utilized <strong>Terraform</strong> to automate AWS resources provisioning.<br>
+                        - Configured <strong>AWS S3</strong> for static website hosting.<br>
+                        - Deployed and managed static content on S3.<br>
+                    </p>
+                    <div class="project-links">
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Containerized Applications</h3>
+                    <p>
+                        Deployed microservices using Docker and orchestrated with Kubernetes.
+                        A project showcasing containerization and orchestration skills using modern DevOps tools.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/UjwalNagrikar/Webapp-Project-K8s" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-links">
+                <a href="https://www.linkedin.com/in/ujjwal-nagrikar-2631aa273/" target="_blank" rel="noopener noreferrer" class="contact-link">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://www.instagram.com/ujwalnagrikar/" target="_blank" rel="noopener noreferrer" class="contact-link">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+                <a href="https://github.com/ujwalnagrikar" target="_blank" rel="noopener noreferrer" class="contact-link">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://x.com/UjjwalNagrikar" target="_blank" rel="noopener noreferrer" class="contact-link">
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <span>(Twitter)</span>
+                </a>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
