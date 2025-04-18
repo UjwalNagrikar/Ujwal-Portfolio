@@ -1,0 +1,10 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /home/ec2-user/app # or wherever your app should go
+
+hooks:
+  ApplicationStart:
+    - location: start.sh
+      timeout: 300
