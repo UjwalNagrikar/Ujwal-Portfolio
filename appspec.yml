@@ -1,8 +1,8 @@
 version: 0.0
 os: linux
 files:
-  - source: / # This points to the root directory where your files are located (e.g., HTML, CSS, JS)
-    destination: /var/www/html # The destination directory on the EC2 instance (where the web server serves the files)
+  - source: /  # This points to the root directory where your HTML, CSS, and JS files are located
+    destination: /var/www/html  # Destination on the EC2 instance where the web server will serve the files
 
 hooks:
   ApplicationStart:
