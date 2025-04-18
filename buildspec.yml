@@ -2,24 +2,20 @@ version: 0.2
 
 phases:
   install:
-    runtime-versions:
-      nodejs: 18 # or python: 3.10, java: corretto11, etc.
     commands:
-      - echo Installing dependencies...
-      - npm install # adjust based on your project
+      - echo Updating packages and installing NGINX...
+      - sudo apt-get update -y
+      - sudo apt-get install nginx -y
+
   build:
     commands:
-      - echo Build started...
-      - npm run build # or any build command like make, mvn package, etc.
-  post_build:
-    commands:
-      - echo Build completed on `date`
-      - echo Preparing for deployment...
-      - zip -r build-output.zip * # zip everything for CodeDeploy
+      - echo Copying frontend files to /var/www/html...
+      - sudo cp index.html /var/www/html/
+      - sudo cp style.css /var/www/html/
+      - sudo cp script.js /var/www/html/
 
 artifacts:
   files:
-    - build-output.zip
-    - appspec.yml
-    - scripts/** # optional - hooks for appspec.yml
-  discard-paths: yes
+    - /var/www/html/index.html
+    - /var/www/html/style.css
+    - /var/www/html/script.js
