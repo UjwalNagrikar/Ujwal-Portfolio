@@ -1,10 +1,10 @@
 version: 0.0
 os: linux
 files:
-  - source: /
-    destination: /home/ec2-user/app # or wherever your app should go
+  - source: / # This points to the root directory where your files are located
+    destination: /var/www/html # The typical directory for serving a website on Linux
 
 hooks:
   ApplicationStart:
-    - location: start.sh
+    - location: scripts/start.sh
       timeout: 300
