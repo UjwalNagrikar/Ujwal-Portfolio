@@ -3,19 +3,21 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo Updating packages and installing NGINX...
+      - echo Updating system packages and installing NGINX...
       - sudo apt-get update -y
       - sudo apt-get install nginx -y
 
   build:
     commands:
-      - echo Copying frontend files to /var/www/html...
+      - echo Checking files in workspace...
+      - ls -la
+      - echo Creating /var/www/html if not exists...
+      - sudo mkdir -p /var/www/html
+      - echo Copying static files to /var/www/html...
       - sudo cp index.html /var/www/html/
-      - sudo cp style.css /var/www/html/
+      - sudo cp styles.css /var/www/html/
       - sudo cp script.js /var/www/html/
 
 artifacts:
   files:
-    - /var/www/html/index.html
-    - /var/www/html/style.css
-    - /var/www/html/script.js
+    - '**/*'
